@@ -1,17 +1,14 @@
 {
   "name": "converter",
   "module": "index.ts",
-  "type": "module",
-  "scripts": {
-    "build:linux": "bun build ./src/index.ts --minify --compile --sourcemap --external=sharp --outfile=./dist/converter --target=bun-linux-x64"
-  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "dependencies": {
-    "sharp": "^0.33.3"
-  }
+  "scripts": {
+    "build:linux": "bun build ./src/index.ts --minify --compile --sourcemap --external=sharp --outfile=./dist/converter --target=bun-linux-x64"
+  },
+  "type": "module"
 }
